@@ -1,0 +1,55 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+
+.prodcard__details {
+    background-color: colors.$white;
+}
+
+.prodcard__class {
+    color: colors.$grey;
+    font-family: 'Montserrat';
+    font-weight: fonts.$text-preset-4-weight;
+    font-size: fonts.$text-preset-4-fontsize;
+    line-height: fonts.$text-preset-4-lineheight;
+    letter-spacing: fonts.$text-preset-4-letterspacing;
+}
+
+.prodcard__prodname {
+    color: colors.$black;
+    font-family: 'Fraunces';
+    font-weight: fonts.$text-preset-1-weight;
+    font-size: fonts.$text-preset-1-fontsize;
+    line-height: fonts.$text-preset-1-lineheight;
+    letter-spacing: fonts.$text-preset-1-letterspacing;
+}
+
+.prodcard__description {
+    color: colors.$grey;
+    font-family: 'Montserrat';
+    font-weight: fonts.$text-preset-3-weight;
+    font-size: fonts.$text-preset-3-fontsize;
+    line-height: fonts.$text-preset-3-lineheight;
+    letter-spacing: fonts.$text-preset-3-letterspacing;
+}
+
+.prodcard__pricing {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5em;
+}
+
+.prodcard__saleprice {
+    color: colors.$green;
+    font-family: 'Fraunces';
+    font-weight: fonts.$text-preset-1-weight;
+    font-size: fonts.$text-preset-1-fontsize;
+    line-height: fonts.$text-preset-1-lineheight;
+    letter-spacing: fonts.$text-preset-1-letterspacing;
+}
+
+.prodcard__fullprice {
+    color: colors.$grey;
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+}

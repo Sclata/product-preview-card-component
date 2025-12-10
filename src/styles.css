@@ -1,0 +1,250 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+}
+@media screen and (width >= 650px) {
+  .prodcard {
+    display: flex;
+    border-radius: 0.5em;
+  }
+  .prodcard__picture {
+    border-end-start-radius: 0.5em;
+  }
+}
+@media screen and (width < 650px) {
+  .prodcard {
+    max-width: 350px;
+  }
+  .prodcard__picture {
+    border-start-end-radius: 0.5em;
+  }
+  .prodcard__details {
+    border-radius: 0.5em;
+  }
+}
+.prodcard {
+  background-color: hsl(0, 0%, 100%);
+  border-start-start-radius: 0.5em;
+}
+.prodcard__picture {
+  border-start-start-radius: 0.5em;
+  height: auto;
+}
+.prodcard__details {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 0.5em;
+}
+.prodcard__detwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  max-width: 650px;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodcard__button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.875em;
+  letter-spacing: 0;
+  line-height: 110%;
+  width: 17.875em;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  border: none;
+  font-family: "Montserrat";
+  width: 100%;
+}
+
+.prodcard__buttonicon {
+  padding-inline-end: 0.5em;
+}
+
+.prodcard__button:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+.prodcard__details {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.prodcard__class {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.prodcard__prodname {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.prodcard__description {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 160%;
+  letter-spacing: 0;
+}
+
+.prodcard__pricing {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5em;
+}
+
+.prodcard__saleprice {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.prodcard__fullprice {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Montserrat";
+}

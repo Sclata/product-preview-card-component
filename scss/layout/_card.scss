@@ -1,0 +1,68 @@
+@use "../utils/colors";
+
+@media screen and (width >= 650px) {
+    .prodcard {
+        display: flex;
+        border-radius: 0.5em;
+
+        &__picture {
+            border-end-start-radius: 0.5em;
+        }
+    }
+}
+
+@media screen and (width < 650px) {
+    .prodcard {
+        max-width: 350px;
+
+        &__picture {
+            border-start-end-radius: 0.5em;
+        }
+
+        &__details {
+            border-radius: 0.5em;
+        }
+    }
+}
+
+.prodcard {
+    background-color: colors.$white;
+    border-start-start-radius: 0.5em;
+
+    &__picture {
+        border-start-start-radius: 0.5em;
+        height: auto;
+    }
+
+    &__details {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        border-radius:0.5em;
+    }
+
+    &__detwrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-width: 650px;
+}
+
+body {
+    height: 100vh;
+    background-color: colors.$cream;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
